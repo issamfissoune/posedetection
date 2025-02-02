@@ -1,0 +1,143 @@
+/* General styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+}
+
+/* Centering the main container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Video and Canvas Styling */
+video, canvas {
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    max-width: 90%;
+}
+
+/* Title */
+h2 {
+    font-size: 22px;
+    color: #ffcc00;
+    margin-top: 20px;
+}
+
+/* Status */
+#status {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+/* Buttons */
+button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Emoji Labels */
+.emoji {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+/* Prediction Result */
+#result {
+    font-weight: bold;
+    color: #4caf50;
+    font-size: 20px;
+}
+
+/* Confidence */
+#confidence {
+    font-weight: bold;
+    color: #ff5733;
+}
+
+/* Example Counts */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* General styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+}
+
+/* Centering the main container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Video and Canvas Styling */
+video, canvas {
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    max-width: 90%;
+}
+
+/* Title */
+h2 {
+    font-size: 22px;
+    color: #ffcc00;
+    margin-top: 20px;
+}
+
+/* Status */
+#status {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+/* Prediction Result */
+#result {
+    font-weight: bold;
+    color: #4caf50;
+    font-size: 20px;
+}
+
+/* Confidence */
+#confidence {
+    font-weight: bold;
+    color: #ff5733;
+}
+
+/* Sentence Output */
+#sentenceOutput {
+    font-size: 18px;
+    white-space: pre-line; /* Preserve line breaks */
+    margin-top: 10px;
+}

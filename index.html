@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL Sign Recognition</title>
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.1/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.2/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.1/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>ASL Sign Recognition</h1>
+    <p>Train the model with hand signs and start recognizing ASL gestures in real-time.</p>
+
+    <!-- Video & Canvas Section -->
+    <div class="video-container">
+        <video class="input_video"></video>
+        <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+    </div>
+
+    <!-- Recognition Results -->
+    <h2>Recognition Results:</h2>
+    <p>
+        <strong>Predicted Sign:</strong> <span id="result">...</span><br>
+        <strong>Confidence:</strong> <span id="confidence">...</span>%
+    </p>
+    <p id="status"></p>
+
+    <!-- Sentence Formation -->
+    <h2>Sentence Formation:</h2>
+    <p id="sentenceOutput">[Your sentence will appear here]</p>
+
+    <!-- Training Buttons (Injected by JavaScript) -->
+    <h2>Train the Model</h2>
+    <div id="trainingButtons"></div>
+
+    <!-- Control Buttons -->
+    <h2>Controls</h2>
+    <div class="control-buttons">
+        <button id="buttonPredict">Start Predicting</button>
+        <button id="clearAll">Clear All Classes</button>
+        <button id="stopTraining">Stop Training</button>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
